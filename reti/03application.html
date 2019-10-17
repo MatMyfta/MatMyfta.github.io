@@ -322,7 +322,19 @@
 
 	<img src="https://electronicspost.com/wp-content/uploads/2016/05/2.23.png">
 
-		
+	<ul>
+		<li>The first 12 bytes is the header section. The first field is a 16-bit number that identifies the query. This identifier copied into the reply message to a query, allowing the clinet to match received replies with sent queries. There are a number of flags in the flag field.<br>
+		A 1-bit query/reply flag indicates whether the message is a query (0) or a reply (1).<br>
+		A 1-bit authoritative flag is set in a reply message when a DNS server is an authoritative server for a queried name.<br>
+		A 1-bit recursion-desired flag is set when a client desires that the DNS server perform recursion when it doesn't have the record.<br>
+		A 1-bit recursion-available field is set in a reply if the DNS server supports recursion.</li>
+		<li>The question section contains information about the query that is being made. This includes a name field that contains the name that is being queried, and a type field that indicates the type of question being asket about the name.</li>
+		<li>In a reply from a DNS server, the answer section contains the resource records for the name that was originally queried.</li>
+		<li>The authority section contains records of other authoritative servers.</li>
+		<li>The additional section contains other helpful records.</li>
+	</ul>
+
+	
 
 	<table class="footer">
 		<tr>

@@ -61,3 +61,7 @@ iframe {
     margin: auto;
     display: block;
 }
+
+.table-list {
+    border: 1px dashed;
+}
