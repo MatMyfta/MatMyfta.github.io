@@ -62,6 +62,7 @@ iframe {
     display: block;
 }
 
-.table-list {
+.table-list td {
     border: 1px dashed;
+    font-size: 9pt;
 }
