@@ -1,0 +1,137 @@
+<html>
+<head>
+	<title>Index Reti</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+	<table class="header">
+		<tr>
+			<td colspan="2" class="title">Architectures</td>
+		</tr>
+
+		<tr>
+			<td class="left">
+				none
+			</td>
+			<td class="right">
+				<a href="03application.html">next page</a>
+			</td>
+		</tr>
+	</table>
+
+	<a name="index"></a>
+	<ul type=I>
+		<li><a href="#internet">Internet</a></li>
+		<li><a href="#nc">Network Core</a></li>
+		<li><a href="#dlt">Delay, Loss, and Throughput</a></li>
+		<li><a href="#pl">Protocol Layers</a></li>
+	</ul>
+
+	<hr>
+	<p><a name="internet" href="#index">Internet</a></p>
+	<p>Internet is a computer network that interconnects hundreds of millions of computing devices throughout the world. In the internet jargon all the devices connected in the internet are called <b>hosts</b> or <b>end systems</b>.</p>
+
+	<p>End systems are connected together by a network of communication links and packet switches. Different links can transmit data at different rates, with the <b>transmission</b> rate of a link measured in bits/second.</p>
+
+	<p>When one end system has data to send to another end system, the sending end system segments the data and adds header bytes to each segment. The resulting packages of information, known as <b>packets</b>, are reassembled into the original data.</p>
+
+	<p>A packet switch takes a packet arriving on one of its incoming communication links and forwards that packet on one of its outgouing communication links. The most prominent types of packet switches are <b>routers</b> and <b>link-layer switches</b>.</p>
+
+	<p>End systems access the Internet through <b>Internet Service Providers (ISP)</b>, including residential ISPs such as local cable or telephone companies. ISPs provide a variety of types of network access to the end systems, including residential broadband access such as cable modem or DLS, high-speed LAN access, wireless access, and 56kbps dial-up modem access.<br>
+	ISPs also provide Internet access to content providers, connecting Web sistes directly to the Internet.</p>
+
+	<p>We can also describe the Internet as <i>an infrastructure that provides services to applications</i>, including: e-mail, web surfing, social networks, instant messaging, VoIP, streaming, P2P file sharing and much more. The applications are said to be <b>distrubuted applications</b>, since they involve multiple end systems that exchange data with each other.</p>
+
+	<p>End systems attached to the Internet provide an <b>Application Programming Interface (API)</b> that specifies how a program running on one end system asks the Internet infrastructure to deliver data to a specific destination program running on another end system. This Internet API is a set of rules that the sending program must follow so that the Internet can deliver the data to the destination program.</p>
+
+	<p>A <b>network protocol</b> is similar to a human protocol, except that the entities exchanging messages and taking actions are hardware or software components of some device. All activity in the Internet that involves two or more communicating remote entitites is governated by a protocol.</p>
+
+	<div class="def"><p class="def-title">Protocol</p>
+	A <b>protocol</b> defines the format and the order of messages exchanged between twoor more communicating entities, as well as the actions taken on the transmission and/or receipt of a message or other event.</div>
+
+	<hr>
+	<p><a name="nc" href="#index">Network Core</a></p>
+	<p>To send a message from a source end system to a destination end system, the source breaks long messages into smaller chunks of data (packets). Between source and destination each packet travels through communication links and packet switches. Packet are transmitted over each communication link at a rate equal to the full transmission rate of the link.</p>
+
+	<p>Most packet switches use <b>store-and-forward transmission</b> at the inputs to the links, that means that the packet switch must receive the entire packet before it can begin to transmit the first bit onto the outbound link.</p>
+
+	<p>Each packet switch has multiple links attached to it. For each attached link, the packet switch has an output buffer, which stores packets that the router is about to send into that link. If an arraving packet needs to be transmitted onto a link but finds the link busy with the transission of another packet, the arriving packet must wait in the output buffer. In addition, to the store-and-forward delas, packets suffer output buffer queuing delays.<br>
+	Since the amount of buffer space is finite, an arriving packet may find that the buffer is completely full with other packets waiting for transmission. In this case packet loss will occur.</p>
+
+	<p>Every and system has an IP address- When a source end system wants to send a packet to a destination end system, the source includes the destination's IP address in the packet's header. Each router has a <b>forwarding table</b> that maps destination address to that router's outbound links. When a packet arrives at a router, the router examines the address and searches its forwarding table to find the appropriate outbound link, then directs the packet to this outbound link.</p>
+
+	<p>In circuit switching networks (traditional telephone networks), the resources needed along a path to provide for communication between the end systems are reserved for the duration of the communication session between the end systems.<br>
+	In the packet-switched networks, these resources are not reserved; a session's messages use the resources on demand, and as a consequence, may have to wait for access to a communication link.</p>
+
+	<hr>
+	<p><a name="dlt" href="#index">Delay, Loss, and Throughput</a></p>
+	<p>As a packet travels from one node to the subsequent node along this path, the packet suffers from several types of delays at each node along the path. The most important of these delays are nodal processing delay, queuing delay, transmission delay, and propagation delay.</p>
+
+	<p>The time required to examing the packet's header and determine where to direct the packet is part of the processing delay. It can also include other factors, such as the time needed to check for bit-level errors in the packet that occurred in transmitting the packet's bit from the upstream node to router.</p>
+
+	<p>At the queue, the packet experiences a queuing delay as it waits to be transmitted onto the link. The lenght of the queueing delay of a specific packet will depend on the number of earlier-arriving packets that are queued and waiting for transmission onto the link.</p>
+
+	<p>Assuming that packets are transmitted in a first-come-first-served manner, our packet can be transmitted only after all the packets that have arrived before it have been transmitted. The transmission delay is Length/Rate.</p>
+
+	<p>Once a bit is pushed into the link, it needs to propagate. The time required to propagate from the beginning of the link is the propagation delay. The bit propagates at the propagation speed of the link, that depends on the physical medium of the link.</p>
+
+	<p>A queue preceding a link has finite capacity, although the queuing capacity depends on the router design and cost. Because the queue capacity is finite, packet delays do not really approach ininity as the traffic intensity approaches. A packet can arrive to fin a full queue. With no place to store such a packet, a router will drop that packet. The fraction of lost packets increases as the traffic intensity increases. Performance at a node is often measured not only in terms of delay, but also in terms of the probability of packet loss.</p>
+
+	<p>Traceroute is a simple program that can run in any Internet host. When the user specifies a destination hostname, the program in the source host send multiple, special packets toward that destination. When a router receives one of these special packets, it send back to the source a short message that contains the name and address of the router.</p>
+
+	<p class="terminal">
+		C:\Users\acer>tracert cis.poly.edu<br>
+		  1     1 ms     3 ms     1 ms  10.7.219.254<br>
+		  2    19 ms    68 ms    53 ms  172.30.90.1<br>
+		  3     2 ms     2 ms     2 ms  bg1-sdc.net.unibz.it [172.30.10.130]<br>
+		  4     6 ms     6 ms     5 ms  irt01.net.unibz.it [46.18.27.98]<br>
+		  5     2 ms     1 ms     1 ms  irt02-irt01.unibz.it [46.18.27.226]<br>
+		  6    13 ms    12 ms    12 ms  te0-0-2-2.nr11.b015975-1.vie01.atlas.cogentco.com [149.6.174.1]<br>
+		  7    14 ms    12 ms    17 ms  te0-0-2-3.agr12.vie01.atlas.cogentco.com [154.25.1.53]<br>
+		  8    12 ms    12 ms    12 ms  be3329.ccr51.vie01.atlas.cogentco.com [130.117.51.113]<br>
+		  9    12 ms    13 ms    12 ms  level3.vie01.atlas.cogentco.com [130.117.15.154]<br>
+		 11   103 ms   103 ms   103 ms  NEW-YORK-UN.ear3.NewYork1.Level3.net [4.28.130.118]<br>
+		 12    96 ms    96 ms    96 ms  128.122.254.73<br>
+		 13    96 ms    96 ms    96 ms  nyugwa-ptp-dmzgwa-vl3081.net.nyu.edu [128.122.254.108]<br>
+		 14    96 ms    97 ms    96 ms  216.165.101.2<br></p>
+
+	<p>Another critical performance measure in computer networks is end-to-end throughput. Consider transfering a lrge file from Host A to Host B across a computer network. The instantaneous throughput at an instant of time is the rate at which B is receiving the file. If the file consists of F bits and the transfer takes T seconds for B to receive all F bits, then the average throughput of the file transfer is F/B bits/sec.</p>
+
+	<hr>
+	<p><a href="#index" name="pl">Protocol Layers</a></p>
+	<p>A layered architecture allows us to discuss a well-defined, specific part of large and complex system. This simplification itself is of considerable value by providing modularity, making it much easier to change the implementation of the service provided by the layer. The layer provides service to the layer above it, and uses services from the layer below it.</p>
+
+	<p>To provide structure to the design of network protocols, network designer organize protocols in layers. Each protocol belogns to one of the layers. We are interested in the services that a layer offers to the layer above - service model of a layer.<br>
+	A protocol layer can be implemented in software, in hardware, or in combination of the two.</p>
+
+	<p>Protocol layering has conceptual and structural advantages [<a href="https://www.rfc-editor.org/rfc/rfc3439">RFC 3439</a>].</p>
+
+	<p>When taken together, the protocols of the various layers are called the protocol stack. The Internet Protocol stack consists of five layers.</p>
+
+	<img src="https://qph.fs.quoracdn.net/main-qimg-84acb2e200090d9612ad4131039b7835">
+
+	<p>The application layer is where network applications and their application-layer protocols reside. The Internet's application layer includes many protocols, such as the HTTP protocol, SMTP, and FTP. An application-layer protocol is distributed over multiple end systems, with the application in one end system using the protocol to exchange packets of information with the application in another end systems. We refer to this packet of information as a <b>message</b></p>
+
+	<p>The Internet's transport layer transports application-layer messages between application endpoints. In the Internet there are two transport protocols, TCP and UDP, either of which can transport application-layer messages. We refer to a transport-layer packet as a <b>segment</b></p>
+
+	<p>The Internet's network layer is responsible for moving network-layer packets known as <b>datagrams</b> from one host to another. The network layer provides the service of delivering the segment to the transport layer in the destination host. The Internet's network layer includes the IP Protocol, which defines the fields in the datagram as well as how the end systems and routers act on these fields.</p>
+
+	<p>To move a packet from one node to the next node in the route, the network ayer relies on the services of the link layer. In particular, at each node, the network layer passes the datagram down to the link layer, which delivers the datagram to the next node along the route. The services provided by the link layer depend on the specific link-layer protocol that is employed over the link. We refer to the link-layer packets as <b>frames</b></p>
+
+	<p>The job of the physical layer is to move the individual bits within the frame from one node to the next. The protocols in this layer are again link dependent and further depend on the actual transmission medium of the link.</p>
+
+	<img src="https://cdn.shopify.com/s/files/1/1682/4231/articles/eo6248sth0pz_1600x.png?v=1519326177">
+
+	<table class="footer">
+		<tr>
+			<td class="left"><a href="../index.html">~Index</a></td>
+			<td class="right"><a href="index.html">Index reti</a></td>
+		</tr>
+	</table>
+
+
+</body>
+
+</html>
