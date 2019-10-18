@@ -25,6 +25,7 @@
 	<a name="index"></a>
 	<ul type=I>
 		<li><a href="#intro">Introduction</a></li>
+		<li><a href="#ex">Example</a></li>
 	</ul>
 
 	<hr>
@@ -58,6 +59,19 @@
 		&emsp;&emsp;if A[i] < min then<br>
 		&emsp;&emsp;&emsp;min <- A[i]<br>
 		&emsp;return min
+	</code>
+
+	<hr>
+	<p>Binary Search</p>
+	<code>
+		ITEM binarySearch(ITEM A[], integer v, integer i, integer j)<br>
+		&emsp;if i > j then return 0<br>
+		&emsp;else<br>
+		&emsp;&emsp;integer m <- (i+j)/2
+		&emsp;&emsp;if A[m] == v then return i<br>
+		&emsp;&emsp;else<br>
+		&emsp;&emsp;&emsp;if A[m] > v then return binarySearch(A,v,m,j)<br>
+		&emsp;&emsp;&emsp;else return binarySearch(A,v,i,m
 	</code>
 
 	<table class="footer">
