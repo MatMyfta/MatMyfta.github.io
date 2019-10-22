@@ -13,51 +13,7 @@
 		</tr>
 	</table>
 
-	<hr>
-	<p><a name="intro" href="#index">Introduction</a></p>
-	<p>In computer science, an algorithm is a sequence of instructions, typically to solve a class of problems or perform a computation.<br>
-	An algorithm can be expressed within a finite amount of space and time and in a well-defined language for calculating a function. Starting from an initial state and initial input the instructions describe a computation that, when executed, proceeds through a finite number of well-defined successive states, eventually producing output and terminating at a final ending state.</p>
 
-	<p>An informal definition could be <i>"a set of rules that precisely defines a sequence of operations"</i>, which would include all programs, including programs that do not perform numeric calculations.</p>
-
-	<p>Algorithms can be expressed in many kinds of notation, including pseudocode. Natural language expressions of algorithms tend to be verbose and ambiguous, and are rarely used for complex or technical algorithms. Pseudocodes are strucutred ways to express algorithms that avoid many of the ambiguities common in natural language statements.</p>
-
-	<p>Representations of algorithms can be classed into three accepted levels of Turing machine description.</p>
-
-	<ul type=1>
-		<li>High-level description: describe an algorithm ignoring the implementation details.</li>
-		<li>Implementation description: define the way the Turing machine uses its head and the way that it stores data on its tape.</li>
-		<li>Formal description: Most detailed, lowest level, gives the Turing machine's state table.</li>
-	</ul>
-
-	<p>Algorithm design refers to a method or mathematical process for problem-solving and engineering algorithms. One of the most important aspects of algorithm designs is creating an algorithm that ha sn efficient run-time, also known as its Big O.</p>
-
-	<p>In computer science, correctness of an algorithm is asserted when it is said that the algorithm is correct with respect to a specification.</p>
-
-	<hr>
-	<p><a href="#index" name="ex">Example</a></p>
-	<p>Search for a minimum</p>
-	<code>
-		ITEM min(ITEM[] A, integer n)<br>
-		&emsp;ITEM min <- A[1]<br>
-		&emsp;for i <- 2 to n do<br>
-		&emsp;&emsp;if A[i] < min then<br>
-		&emsp;&emsp;&emsp;min <- A[i]<br>
-		&emsp;return min
-	</code>
-
-	<hr>
-	<p>Binary Search</p>
-	<code>
-		ITEM binarySearch(ITEM A[], integer v, integer i, integer j)<br>
-		&emsp;if i > j then return 0<br>
-		&emsp;else<br>
-		&emsp;&emsp;integer m <- (i+j)/2<br>
-		&emsp;&emsp;if A[m] == v then return i<br>
-		&emsp;&emsp;else<br>
-		&emsp;&emsp;&emsp;if A[m] > v then return binarySearch(A,v,m,j)<br>
-		&emsp;&emsp;&emsp;else return binarySearch(A,v,i,m)
-	</code>
 
 	<table class="footer">
 		<tr>
