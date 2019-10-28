@@ -73,6 +73,8 @@ code {
 }
 pre {
     text-align: center;
+    line-height: 6pt;
+    background: #f8f8f8;
 }
 pre.code {
     text-align: left;
