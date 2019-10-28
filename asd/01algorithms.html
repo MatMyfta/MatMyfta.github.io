@@ -53,25 +53,25 @@
 	<p><a href="#index" name="ex">Example</a></p>
 	<p>Search for a minimum</p>
 	<pre class="code">
-		ITEM min(ITEM[] A, integer n)<br>
-		    ITEM min <- A[1]<br>
-		    for i <- 2 to n do<br>
-		        if A[i] < min then<br>
-		            min <- A[i]<br>
-		    return min
+ITEM min(ITEM[] A, integer n)<br>
+    ITEM min <- A[1]<br>
+    for i <- 2 to n do<br>
+        if A[i] < min then<br>
+            min <- A[i]<br>
+    return min
 	</pre>
 
 	<hr>
 	<p>Binary Search</p>
 	<pre class="code">
-		ITEM binarySearch(ITEM A[], integer v, integer i, integer j)<br>
-		    if i > j then return 0<br>
-		    else<br>
-		        integer m <- (i+j)/2<br>
-		        if A[m] == v then return i<br>
-		        else<br>
-		            if A[m] > v then return binarySearch(A,v,m,j)<br>
-		            else return binarySearch(A,v,i,m)
+ITEM binarySearch(ITEM A[], integer v, integer i, integer j)<br>
+    if i > j then return 0<br>
+    else<br>
+        integer m <- (i+j)/2<br>
+        if A[m] == v then return i<br>
+        else<br>
+            if A[m] > v then return binarySearch(A,v,m,j)<br>
+            else return binarySearch(A,v,i,m)
 	</pre>
 
 	<table class="footer">
