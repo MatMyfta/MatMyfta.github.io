@@ -28,12 +28,11 @@ hr {
 }
 
 p,p1,p2,p3,p4,p5,p6,p7 {
-	margin: 10px;
 	display: block;
 }
-p1 {
-    margin: 20px 0;
-}
+p { margin: 10px;}
+p1 {margin: 10px 20px;}
+
 .terminal {
     padding: 5px;
     font-size: 8pt;
