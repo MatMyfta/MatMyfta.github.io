@@ -71,6 +71,9 @@ code {
     border-bottom: 1px dashed;
     line-height: 14pt;
 }
+pre {
+    text-align: center;
+}
 
 @media only screen and (max-width: 768px) {
     body {
