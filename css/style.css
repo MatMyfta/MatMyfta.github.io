@@ -16,7 +16,6 @@ mark1 {background-image: linear-gradient(to top,yellow,yellow 30%,white 30%);}
 mark2 {background-image: linear-gradient(to top,violet,violet 30%,white 30%);}
 mark3 {background-image: linear-gradient(to top,greenyellow,greenyellow 30%,white 30%);}
 
-
 /* SIDEBAR */
 .sidebar {
 	position: fixed;
@@ -41,7 +40,10 @@ mark3 {background-image: linear-gradient(to top,greenyellow,greenyellow 30%,whit
     text-align: center;
     margin: 30px auto 0 auto;
     display: table;
-    background: yellow;
+}
+
+#prfl-location {
+	text-align: center;
 }
 
 #profile-icon {
@@ -175,4 +177,24 @@ input[type="text"] {
 }
 .card td {
 	padding: 14px;
+}
+
+.big-txt, .xsmall-txt, .xxsmall-txt {margin: 0}
+.big-txt {font-size:24pt;}
+.xsmall-txt {font-size: 10pt}
+.xxsmall-txt {font-size: 8pt;}
+
+
+@media only screen and (max-width: 1200px) {
+	#main-sidebar {
+		display: none;
+	}
+
+	#main-content {
+		margin: 0;
+		padding: 0 5vw;
+	}
+
+	iframe {width: 80vw !important;}
+	.progress-bar {width: 70vw;}
 }
