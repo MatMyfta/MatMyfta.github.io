@@ -101,11 +101,25 @@ mark3 {background-image: linear-gradient(to top,greenyellow,greenyellow 30%,whit
     width: 250px;
 }
 
+
 /* MAIN CONTAINER */
 #main-content {
-	padding: 100px;
+	padding: 0 100px;
 	margin-right: 350px;
 }
+
+#main-top-menu {
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: center;
+}
+#main-top-menu .block {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
 #main-title {
 	font-family: 'Abel';
 	font-size: 43pt;
@@ -132,6 +146,17 @@ mark3 {background-image: linear-gradient(to top,greenyellow,greenyellow 30%,whit
 	color: white;
 	border: 0;
 	padding: 10px 21px;
+}
+.label:hover {
+	background: black;
+}
+
+.btn {
+	padding: 10px 21px;
+	border: 1px solid #444;
+}
+.btn:hover {
+	background: white;
 }
 
 .progress-back {
@@ -185,11 +210,9 @@ input[type="text"] {
 .xxsmall-txt {font-size: 8pt;}
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 960px) {
 	body {font-size:3vw;}
-	#main-sidebar {
-		display: none;
-	}
+	#main-sidebar, #main-top-menu {display: none;}
 
 	#main-title {font-size: 12vw;}
 
@@ -202,4 +225,8 @@ input[type="text"] {
 
 	iframe {width: 80vw !important;}
 	.progress-back  {width: 70vw !important;}
+	
+	.big-txt {font-size:8vw;}
+	.xsmall-txt {font-size: 2vw}
+	.xxsmall-txt {font-size: 1vw;}
 }
