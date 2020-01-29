@@ -186,16 +186,20 @@ input[type="text"] {
 
 
 @media only screen and (max-width: 1200px) {
-	body {font-size:12pt;}
+	body {font-size:3vw;}
 	#main-sidebar {
 		display: none;
 	}
+
+	#main-title {font-size: 12vw;}
 
 	#main-content {
 		margin: 0;
 		padding: 5vw;
 	}
 
+	.title {font-size: 8vw;}
+
 	iframe {width: 80vw !important;}
-	.progress-bar {width: 70vw;}
+	.progress-back  {width: 70vw !important;}
 }
