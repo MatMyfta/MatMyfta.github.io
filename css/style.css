@@ -186,13 +186,14 @@ input[type="text"] {
 
 
 @media only screen and (max-width: 1200px) {
+	body {font-size:12pt;}
 	#main-sidebar {
 		display: none;
 	}
 
 	#main-content {
 		margin: 0;
-		padding: 0 5vw;
+		padding: 5vw;
 	}
 
 	iframe {width: 80vw !important;}
