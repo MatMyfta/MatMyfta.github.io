@@ -1,0 +1,15 @@
+@font-face {font-family: 'Abel'; src: url('../fonts/Abel-Regular.ttf');}
+
+@font-face {font-family: 'Amatic'; src: url('../fonts/AmaticSC-Regular.ttf');}
+@font-face {font-family: 'Amatic'; font-weight: bold; src: url('../fonts/AmaticSC-Bold.ttf');}
+
+@font-face {font-family: 'Open Sans Condensed'; src: url('../fonts/OpenSansCondensed-Light.ttf');}
+
+@font-face {font-family: 'Quicksand'; src: url('../fonts/Quicksand-Regular.ttf');}
+
+@font-face {font-family: 'RobotoMono'; src: url('../fonts/RobotoMono-Light.ttf');}
+@font-face {font-family: 'RobotoMono'; font-weight: bold; src: url('../fonts/RobotoMono-Bold.ttf');}
+
+@font-face {font-family: 'Shadows Into Light'; src: url('../fonts/ShadowsIntoLight-Regular.ttf');}
+
+@font-face {font-family: 'Slabo'; src: url('../fonts/Slabo27px-Regular.ttf');}

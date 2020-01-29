@@ -1,0 +1,178 @@
+/*
+	* SIDEBAR
+	* MAIN CONTAINER
+	* UTILITIES
+*/
+
+body {margin: 0 !important;color: black; font-family: 'RobotoMono';}
+a {color: black;}
+a:hover {background-image: linear-gradient(to top,#ff0,#ff0 30%,#fff 30%);
+	text-decoration: none}
+ul li {margin: 15px;}
+ol {font-family: 'RobotoMono';}
+ol li {margin: 10px;}
+hr {border-bottom: 0; margin: 30px 0 20px 0; border-top: 1px solid #444;}
+mark1 {background-image: linear-gradient(to top,yellow,yellow 30%,white 30%);}
+mark2 {background-image: linear-gradient(to top,violet,violet 30%,white 30%);}
+mark3 {background-image: linear-gradient(to top,greenyellow,greenyellow 30%,white 30%);}
+
+
+/* SIDEBAR */
+.sidebar {
+	position: fixed;
+	height: 100%;
+	width: 250px;
+	padding: 0 50px;
+	right: 0;
+}
+#main-sidebar {
+	background: #fff;
+	border-left: 1px solid #444;
+}
+
+#profile-gadg {
+	margin: auto;
+	border-bottom: 1px solid #444;
+}
+
+#profile-name {
+    font-family: 'Abel';
+    font-size: 24pt;
+    text-align: center;
+    margin: 30px auto 0 auto;
+    display: table;
+    background: yellow;
+}
+
+#profile-icon {
+	background: #fff;
+	padding: 7px;
+	border: 1px solid #444;
+	margin: 20px auto;
+	width: 150px;
+	height: 150px;
+}
+#profile-icon img {
+	width: 150px;
+	height: 150px;
+}
+
+.sidebar .title {
+	text-align: center;
+}
+#rapid-links-title {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#rapid-links {
+	margin: 0;
+	padding: 0;
+}
+#rapid-links li {
+	text-align: right;
+	display: block;
+}
+#rapid-links li a {
+	text-decoration: none;
+	font-family: 'RobotoMono';
+}
+#rapid-links li a:hover {
+	background: yellow;
+	color: black;
+}
+#rapid-links li a:before {
+	content: "[ ";
+}
+#rapid-links li a:after {
+	content: " ]";
+}
+
+#sidebar-sub .label {
+    margin: auto !important;
+    display: block;
+    font-family: 'RobotoMono';
+}
+#sidebar-sub {
+    position: absolute;
+    bottom: 30px;
+    width: 250px;
+}
+
+/* MAIN CONTAINER */
+#main-content {
+	padding: 100px;
+	margin-right: 350px;
+}
+#main-title {
+	font-family: 'Abel';
+	font-size: 43pt;
+}
+
+#container {
+	padding: 30px;
+}
+#container hr {margin: 50px 0;}
+.description {
+	margin-left: 20px;
+}
+#container .title {
+	margin-bottom: 30px;
+}
+
+/* UTILITIES */
+.title {
+	font-family: 'Amatic';
+	font-size: 32pt;
+}
+.label {
+	background: black;
+	color: white;
+	border: 0;
+	padding: 10px 21px;
+}
+
+.progress-back {
+	padding: 5px;
+	border: 1px solid #444;
+	display: inline-block;
+	width: 400px !important;
+}
+.progress-bar {
+	padding: 15px 0 15px 15px;
+	display: block;
+	color: #fff;
+}
+
+input[type="submit"] {
+    background: black;
+	border: 0;
+	color:#fff;
+    font-family: 'RobotoMono';
+    padding: 15px;
+}
+input[type="text"] {
+    padding: 14px;
+    margin: 5px;
+    border: 1px dashed 
+    #444;
+    font-family: 'RobotoMono';
+}
+
+.card {
+	width: 80%;
+	margin: auto;
+	border-bottom: 1px dashed #444;
+}
+.card th {
+    background: black;
+    color: #fff;
+    font-weight: normal;
+    padding: 15px;
+    text-align: left;
+    font-family: 'abel';
+    font-size: 18pt;
+}
+.card td {
+	padding: 14px;
+}
