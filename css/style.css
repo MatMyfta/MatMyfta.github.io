@@ -232,6 +232,14 @@ input[type="text"] {
 		padding: 5vw;
 	}
 
+	.container2 img {display: none !important}
+	.container2 .paragraph {
+		width: 80vw !important;
+		margin: 30px auto !important;
+		padding: 0 !important;
+		font-size: 4vw !important;
+	}
+
 	.title {font-size: 8vw;}
 
 	iframe {width: 80vw !important;}
