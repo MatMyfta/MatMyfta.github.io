@@ -4,7 +4,7 @@
 	* UTILITIES
 */
 
-body {margin: 0 !important;color: black; font-family: 'RobotoMono';}
+body {margin: 0 !important;color: black; font-family: 'Abel'; font-size: 14pt}
 a {color: black;}
 a:hover {background-image: linear-gradient(to top,#ff0,#ff0 30%,#fff 30%);
 	text-decoration: none}
@@ -23,6 +23,7 @@ mark3 {background-image: linear-gradient(to top,greenyellow,greenyellow 30%,whit
 	width: 250px;
 	padding: 0 50px;
 	right: 0;
+	font-family: RobotoMono !important
 }
 #main-sidebar {
 	background: #fff;
@@ -42,9 +43,7 @@ mark3 {background-image: linear-gradient(to top,greenyellow,greenyellow 30%,whit
     display: table;
 }
 
-#prfl-location {
-	text-align: center;
-}
+#prfl-email, #prfl-location {font-size: 11pt; text-align: center}
 
 #profile-icon {
 	background: #fff;
@@ -136,9 +135,21 @@ mark3 {background-image: linear-gradient(to top,greenyellow,greenyellow 30%,whit
 	margin-bottom: 30px;
 }
 
+/* PAGES */
+.container2 {
+	width: 80vw;
+	margin: auto;
+}
+.container2 .paragraph {
+	font-family: abel;
+	font-size: 14pt;
+	background: #fff;
+	padding: 20px;
+	text-align: justify;
+}
 /* UTILITIES */
 .title {
-	font-family: 'Amatic';
+	font-family: 'Abel';
 	font-size: 32pt;
 }
 .label {
@@ -211,7 +222,7 @@ input[type="text"] {
 
 
 @media only screen and (max-width: 1020px) {
-	body {font-size:3vw;}
+	body {font-size:2vw;}
 	#main-sidebar, #main-top-menu {display: none;}
 
 	#main-title {font-size: 12vw;}
@@ -227,6 +238,6 @@ input[type="text"] {
 	.progress-back  {width: 70vw !important;}
 	
 	.big-txt {font-size:8vw;}
-	.xsmall-txt {font-size: 2vw}
+	.xsmall-txt {font-size: 1.5vw}
 	.xxsmall-txt {font-size: 1vw;}
 }
