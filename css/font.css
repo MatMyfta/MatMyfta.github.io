@@ -1,7 +1,24 @@
 @font-face {font-family: 'Abel'; src: url('../fonts/Abel-Regular.ttf');}
 
+@font-face {font-family: 'Abril Fatface'; src: url('../fonts/AbrilFatface-Regular.ttf');}
+
 @font-face {font-family: 'Amatic'; src: url('../fonts/AmaticSC-Regular.ttf');}
 @font-face {font-family: 'Amatic'; font-weight: bold; src: url('../fonts/AmaticSC-Bold.ttf');}
+
+@font-face {font-family: 'Bebas Neue'; src: url("../fonts/BebasNeue-Regular.ttf");}
+
+@font-face {font-family: 'Cabin'; src: url("../fonts/Cabin-Regular.ttf");}
+@font-face {font-family: 'Cabin'; font-weight: 500; src: url("../fonts/Cabin-Medium.ttf");}
+@font-face {font-family: 'Cabin'; font-weight: 700; src: url("../fonts/Cabin-SemiBold.ttf");}
+@font-face {font-family: 'Cabin'; font-weight: bold; src: url("../fonts/Cabin-Bold.ttf");}
+
+@font-face {font-family: 'Gupter'; src: url("../fonts/Gupter-Regular.ttf");}
+@font-face {font-family: 'Gupter'; font-weight: 500; src: url("../fonts/Gupter-Medium.ttf");}
+@font-face {font-family: 'Gupter'; font-weight: bold; src: url("../fonts/Gupter-Bold.ttf");}
+
+@font-face {font-family: 'Playfair Display'; src: url("../fonts/PlayfairDisplay-Regular.ttf");}
+@font-face {font-family: 'Playfair Display'; font-weight: 500; src: url("../fonts/PlayfairDisplay-Medium.ttf");}
+@font-face {font-family: 'Playfair Display'; font-weight: bold; src: url("../fonts/PlayfairDisplay-Bold.ttf");}
 
 @font-face {font-family: 'Open Sans Condensed'; src: url('../fonts/OpenSansCondensed-Light.ttf');}
 

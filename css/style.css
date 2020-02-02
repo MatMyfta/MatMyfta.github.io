@@ -1,251 +1,39 @@
-/*
-	* SIDEBAR
-	* MAIN CONTAINER
-	* UTILITIES
-*/
-
-body {margin: 0 !important;color: black; font-family: 'Abel'; font-size: 14pt}
-a {color: black;}
-a:hover {background-image: linear-gradient(to top,#ff0,#ff0 30%,#fff 30%);
-	text-decoration: none}
-ul li {margin: 15px;}
-ol {font-family: 'RobotoMono';}
-ol li {margin: 10px;}
-hr {border-bottom: 0; margin: 30px 0 20px 0; border-top: 1px solid #444;}
-mark1 {background-image: linear-gradient(to top,yellow,yellow 30%,white 30%);}
-mark2 {background-image: linear-gradient(to top,violet,violet 30%,white 30%);}
-mark3 {background-image: linear-gradient(to top,greenyellow,greenyellow 30%,white 30%);}
-
-/* SIDEBAR */
-.sidebar {
-	position: fixed;
-	height: 100%;
-	width: 250px;
-	padding: 0 50px;
-	right: 0;
-	font-family: RobotoMono !important
-}
-#main-sidebar {
-	background: #fff;
-	border-left: 1px solid #444;
-}
-
-#profile-gadg {
-	margin: auto;
-	border-bottom: 1px solid #444;
-}
-
-#profile-name {
-    font-family: 'Abel';
-    font-size: 24pt;
-    text-align: center;
-    margin: 30px auto 0 auto;
-    display: table;
-}
-
-#prfl-email, #prfl-location {font-size: 11pt; text-align: center}
-
-#profile-icon {
-	background: #fff;
-	padding: 7px;
-	border: 1px solid #444;
-	margin: 20px auto;
-	width: 150px;
-	height: 150px;
-}
-#profile-icon img {
-	width: 150px;
-	height: 150px;
-}
-
-.sidebar .title {
-	text-align: center;
-}
-#rapid-links-title {
-	margin-top: 20px;
-	margin-bottom: 10px;
-}
-
-#rapid-links {
-	margin: 0;
-	padding: 0;
-}
-#rapid-links li {
-	text-align: right;
-	display: block;
-}
-#rapid-links li a {
-	text-decoration: none;
-	font-family: 'RobotoMono';
-}
-#rapid-links li a:hover {
-	background: yellow;
-	color: black;
-}
-#rapid-links li a:before {
-	content: "[ ";
-}
-#rapid-links li a:after {
-	content: " ]";
-}
-
-#sidebar-sub .label {
-    margin: auto !important;
-    display: block;
-    font-family: 'RobotoMono';
-}
-#sidebar-sub {
-    position: absolute;
-    bottom: 30px;
-    width: 250px;
-}
+body {margin: 0;font-family: abel}
+a, a:visited {color: #444; transition: all .3s ease}
+a:hover {color: #26e6b2;}
 
 
-/* MAIN CONTAINER */
-#main-content {
-	padding: 0 100px;
-	margin-right: 350px;
-}
+#index {background: #3742fa}
 
-#main-top-menu {
-    margin: auto;
-    margin-bottom: 50px;
-    padding: 20px;
-    text-align: center;
-}
-#main-top-menu .block {
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-}
 
-#main-title {
-	font-family: 'Abel';
-	font-size: 43pt;
-}
+.container{height: 100%;margin-left: 5vw;width: 95vw; color: #fff;}
+.container2 {width: 70vw; margin: auto;}
+#main-title {font-family: 'Abril Fatface'; font-size: 32pt; line-height: 15vh}
+#info-table {margin: auto}
+#info-table tr td {padding: 2vw}
 
-#container {
-	padding: 30px;
-}
-#container hr {margin: 50px 0;}
-.description {
-	margin-left: 20px;
-}
-#container .title {
-	margin-bottom: 30px;
-}
+
+#sidebar {background: #fff;height: 100%;width: 5vw;position: fixed;transition: all .5s cubic-bezier(.68,-0.55,.27,1.55)}
+.expanded {width: 30vw !important}
+#side-btn {background: transparent;border: 0;font-size: 24pt;width: 5vw;height: 5vw}
+#side-content {margin-left: 5vw; transform: scale(0); transition: all .3s ease}
+#side-content .title {font-family: 'Abril Fatface'; font-size: 24pt; line-height: 42pt}
+#side-content .social a {padding: 10px;}
+.side-bg-pic {width: 30vw;height: 100%;position: fixed;right: 0;top: 0;background-image: url("../img/photo1.jpeg");background-size: cover;background-position: center;background-color: #3742fa;opacity: 0.2;z-index: -1}
+
+.card {width: 20vw;padding: 2vw;color: #555;background:#fff;}
+.card .title {font-family: 'Bebas Neue'; font-size: 24pt;color: #333}
+.card .descr {margin: 10px 0; font-style: italic;text-align: justify; height: 110px}
+.card .bottom {text-align: center; padding-top: 10px;}
+.card .bottom .btn {background: #eee;padding: 15px 24px;color:#444;transition: all .3s ease;}
+.card .bottom .btn:hover {background: #26e6b2;color: #fff;}
+
+.progress-bar {width: 450px;padding: 7px;border: 1px solid #fff;margin: 15px; margin-left: 0}
+.progress-bar .inner-bar {background: #fff;padding: 10px;}
+.progress-bar .inner-bar .txt {font-family: open sans condensed;color: #444;font-size: 15pt;display: block;}
+
+.show {transform: scale(1) !important}
 
 /* PAGES */
-.container2 {
-	width: 80vw;
-	margin: auto;
-}
-.container2 .paragraph {
-	font-family: abel;
-	font-size: 14pt;
-	background: #fff;
-	padding: 20px;
-	text-align: justify;
-}
-/* UTILITIES */
-.title {
-	font-family: 'Abel';
-	font-size: 32pt;
-}
-.label {
-	background: black;
-	color: white;
-	border: 0;
-	padding: 10px 21px;
-}
-.label:hover {
-	background: black;
-}
-
-.btn {
-	padding: 10px 21px;
-	border: 1px solid #444;
-}
-.btn:hover {
-	background: white;
-}
-
-.progress-back {
-	padding: 5px;
-	border: 1px solid #444;
-	display: inline-block;
-	width: 400px !important;
-}
-.progress-bar {
-	padding: 15px 0 15px 15px;
-	display: block;
-	color: #fff;
-}
-
-input[type="submit"] {
-    background: black;
-	border: 0;
-	color:#fff;
-    font-family: 'RobotoMono';
-    padding: 15px;
-}
-input[type="text"] {
-    padding: 14px;
-    margin: 5px;
-    border: 1px dashed 
-    #444;
-    font-family: 'RobotoMono';
-}
-
-.card {
-	width: 80%;
-	margin: auto;
-	border-bottom: 1px dashed #444;
-}
-.card th {
-    background: black;
-    color: #fff;
-    font-weight: normal;
-    padding: 15px;
-    text-align: left;
-    font-family: 'abel';
-    font-size: 18pt;
-}
-.card td {
-	padding: 14px;
-}
-
-.big-txt, .xsmall-txt, .xxsmall-txt {margin: 0}
-.big-txt {font-size:24pt;}
-.xsmall-txt {font-size: 10pt}
-.xxsmall-txt {font-size: 8pt;}
-
-
-@media only screen and (max-width: 1200px) {
-	body {font-size:2vw;}
-	#main-sidebar, #main-top-menu {display: none;}
-
-	#main-title {font-size: 12vw;}
-
-	#main-content {
-		margin: 0;
-		padding: 5vw;
-	}
-
-	.container2 img {display: none !important}
-	.container2 .paragraph {
-		width: 80vw !important;
-		margin: 30px auto !important;
-		padding: 0 !important;
-		font-size: 4vw !important;
-	}
-
-	.title {font-size: 8vw;}
-
-	iframe {width: 80vw !important;}
-	.progress-back  {width: 70vw !important;}
-	
-	.big-txt {font-size:8vw;}
-	.xsmall-txt {font-size: 1.5vw}
-	.xxsmall-txt {font-size: 1vw;}
-}
+#content-container {width: 60vw; margin: auto; background: #fff; color: #444; padding: 30px}
+#sub-container {font-family: 'Playfair Display'; font-size: 20pt; width: 50vw; margin-bottom: 7vh}

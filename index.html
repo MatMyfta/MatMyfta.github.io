@@ -5,154 +5,74 @@
 	<link rel="stylesheet" href="css/font.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/fontawesome/css/all.css" />
+
+	<script src="js/sidebar.js"></script>
 </head>
-<body>
+<body id="index">
 
-	<div id="site-content">
+	<div id="sidebar">
+		<button id="side-btn" onclick="expandeSide()"><i class="fas fa-bars"></i></button>
 
-		<div id="main-sidebar" class="sidebar">
-			<div id="profile-gadg">
-				<span id="profile-name">Mateo Myftaraj</span>
-				<div id="profile-icon">
-					<img src="img/profile.jpg" />
-				</div>
-				<p id="prfl-email"><a href="mailto:mateomyftaraj98@gmail.com">mateomyftaraj98@gmail.com</a></p>
-				<p id="prfl-location"><i class="fas fa-map-marker-alt"></i> Bolzano, Italy</p>
-			</div>
-			<div id="rapid-links-title" class="title">Rapid Links</div>
-			<ul id="rapid-links">
-				<li><a href="#about">About me</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<!--
-				<li><a href="#projects">My Projects</a></li>
-				<li><a href="#cv">Curriculum Vitae</a></li>
-				-->
-			</ul>
-			<hr>
-			<div id="social-title" class="title">Social</div>
-			<center style="font-size: 18pt; margin-top: 25px;"><a href="https://github.com/MatMyfta"><i class="fab fa-github"></i></a> <a href="https://www.facebook.com/profile.php?id=100046025257161"><i class="fab fa-facebook-f"></i></a> <a href="https://www.linkedin.com/in/mateo-m-571480105/"><i class="fab fa-linkedin-in"></i></a> <a href="https://www.instagram.com/matmyfta/"><i class="fab fa-instagram"></i></a></center>
+		<div id="side-content">
+			<br><br>
+
+			<div class="title"><a href="index.html">Quick Resume</a></div>
+			<div class="title"><a href="pages/skills.html">Skills</a></div>
+			<div class="title"><a href="">Projects</a></div>
+			<div class="title"><a style="color: blue" href="">About me</a></div>
+
+			<br><br>
+
+			<p id="prfl-email"><a href="mailto:mateomyftaraj98@gmail.com">mateomyftaraj98@gmail.com</a></p>
+			<p id="prfl-location"><i class="fas fa-map-marker-alt"></i> Bolzano, Italy</p>
+
+			<center class="social" style="font-size: 18pt; margin-top: 25px;"> <a href="https://github.com/MatMyfta"><i class="fab fa-github"></i></a>  <a href="https://www.facebook.com/profile.php?id=100046025257161"><i class="fab fa-facebook-f"></i></a>  <a href="https://www.linkedin.com/in/mateo-m-571480105/"><i class="fab fa-linkedin-in"></i></a>  <a href="https://www.instagram.com/matmyfta/"><i class="fab fa-instagram"></i></a></center>
 		</div>
-
-		<div id="main-content">
-
-			<div id="main-top-menu">
-				<span class="block">
-					<p class="big-txt">22</p>
-					<p class="xxsmall-txt">Years living</p>
-				</span>
-				<span class="block">
-					<p class="big-txt">~2</p>
-					<p class="xxsmall-txt">Years studying</p>
-				</span>
-				<span class="block">
-					<p class="big-txt">4.9K</p>
-					<p class="xxsmall-txt">Episode watched</p>
-				</span>
-				<span class="block">
-					<p class="big-txt">>16k</p>
-					<p class="xxsmall-txt">Coffee cups</p>
-				</span>
-			</div>
-
-			<div id="main-title">_ Mateo <span style="transform: rotate(-10deg); display: inline-block;">Myftaraj</span> - Portfolio</div>
-			<div id="container">
-
-				<div class="title"><a name="about" class="title">About me</a></div>
-
-				<div class="description" style="min-height: 400px;">
-
-					<img style="position: absolute;z-index: -1;height: 400px;" src="img/photo1.jpeg" />
-					<p style="display: inline-block;margin:180px 0 0 100px; background: white;padding: 15px;">
-I'm a <b>Computer Scientist</b> (or at least I like to believe that) and a <i>noobie</i> <b>Graphic Designer</b> with (not so) several hobbies.
-<br><br>
-I started my experience in ~2011 when I started using Gimp in order to create personalized Facebook covers and simple pics. Further on I learned Photoshop and its extremely wide usability. After that, I extended my horizons by creating Web Layouts in addition to simple photo manipulations.
-<br><br>
-This move brought me to learn coding, starting from HTML and CSS, then I continued my studies in programming by choosing computer science high school. High school made me curious in much more fields of Computer Science, such as <i>programming</i>, <i>computer networks</i> and <i>algorithms</i>.
-<br><br>
-This curiosity made me choose to continue my studies and attend the Computer Science faculty in the <b>University of Trento</b>.
-					</p>
-					<br>
-					<a style="float: right" class="btn" href="pages/about.html">Further</a>
-
-				</div>
-
-				<hr>
-
-				<div class="title"><a name="skills">Skills</a></div>
-				<div class="description">
-
-					<span class="progress-back"><span class="progress-bar" style="width: 65%; background: cornflowerblue;">Photoshop</span></span>
-
-					<br><br>
-
-					<span class="progress-back"><span class="progress-bar" style="width: 70%; background: darkviolet;">Programming</span></span>
-
-					<br><br>
-
-					<span class="progress-back"><span class="progress-bar" style="width: 65%; background: slategray;">Math</span></span>
-
-					<br><br>
-
-					<span class="progress-back"><span class="progress-bar" style="width: 100%; background: tomato;">HTML & CSS</span></span>
-
-					<br>
-
-					<a style="float: right" class="btn" href="pages/skills.html">Further</a>					
-
-					<!--
-
-					<br><br>
-
-					<span class="progress-back"><span class="progress-bar" style="width: 10%; background: red;">Sex</span></span>
-					I need more practice, so please insert your number in the form below <b><u>only</u> if you are a nice chick</b>.
-					<br><br>
-					<center><input type="text" placeholder="Your number here"><input type="submit" value="Submit">
-					<p class="xsmall-txt">Don't try, it doesn't work</p></center>
-
-					-->
-				</div>
-
-				<hr>
-				
-				<!--
-				<hr>
-
-				<div class="title"><a name="projects">My Projects</a></div>
-				<div class="description">
-					<table class="card">
-						<tr>
-							<th>Drunkstar</th>
-						</tr>
-						<tr>
-							<td>Something about this project</td>
-						</tr>
-					</table>
-				</div>
-
-				<hr>
-
-				<div class="title"><a name="cv">Curriculum Vitae</a></div>
-				<p class="description">Nothing to say, I'm a poor undergraduate student.</p>
-
-				<hr>
-
-				<div class="title"><a name="other">Other funny and useful resources</a></div>
-				<div>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/Mj0MQjqJj8U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/_vPHHD8vIdg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/W8m2aR-BX48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/e-u-W03SgYk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-				</div>
-
-				-->
-			</div>
-		</div>
-
 	</div>
+
+	<div id="outer-container" class="container">
+		<div id="inner-container" class="container2">
+		<span id="main-title">Mateo Myftaraj - Quick Resume</span>
+
+		<table id="info-table">
+			<tr>
+				<td>
+					<div class="card">
+						<div class="title">Programmer</div>
+						<div class="descr">
+I have Computer Programming experience thanks to my Computer Science High School and my current attendance at the Computer Science faculty of the <b>Department of Engineering and Information Science</b> at the <b>University of Trento</b>.
+						</div>
+						<div class="bottom"><a class="btn" href="#">More</a></div>
+					</div>
+				</td>
+				<td>
+					<div class="card">
+						<div class="title">Web designer</div>
+						<div class="descr">
+I have Web Design experience reached by myself as my personal interest and hobby. In particular I have experience in Web Layout design and Web Coding with <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b>.
+						</div>
+						<div class="bottom"><a class="btn" href="#">More</a></div>
+					</div></td>
+			</tr>
+			<tr>
+				<td>
+					<div class="card">
+						<div class="title">Nerd</div>
+						<div class="descr">Film and TV shows enthusiast.</div>
+						<div class="bottom"><a class="btn" href="#">More</a></div>
+					</div></td>
+				<td>
+					<div class="card">
+						<div class="title">Traveler</div>
+						<div class="descr">The hobby that gives me the mostly part of my <b>creativity</b> and a plenty of <b>ideas</b> for future projects.</div>
+						<div class="bottom"><a class="btn" href="#">More</a></div>
+					</div></td>
+			</tr>
+		</table>
+		</div>
+	</div>
+
+	<div class="side-bg-pic"></div>
 
 </body>
 </html>
