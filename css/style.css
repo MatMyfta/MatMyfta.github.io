@@ -35,5 +35,29 @@ a:hover {color: #26e6b2;}
 .show {transform: scale(1) !important}
 
 /* PAGES */
-#content-container {width: 60vw; margin: auto; background: #fff; color: #444; padding: 30px}
+#content-container {width: 60vw; margin: auto; background: #fff; color: #444; padding: 30px; font-family: gupter}
 #sub-container {font-family: 'Playfair Display'; font-size: 20pt; width: 50vw; margin-bottom: 7vh}
+
+@media only screen and (max-width: 600px) {
+	#sidebar {height: 15vh;width: 100%;}
+	.expanded {height: 100% !important; width: 100% !important}
+	#side-btn {width: 15vh; height: 15vh;}
+
+	.container {padding-top: 15vh; padding-bottom: 15vh; margin-left: 0; width: 100vw;}
+	.container2 {width: 90vw}
+	#main-title {line-height: auto}
+	#info-table tr td {display: block}
+
+	.card {width: 80vw; padding: 3vw;}
+	.card .descr {height: auto; width: 70vw; margin: 4vh auto}
+	.card .title {margin: 2vh 4vh}
+	.card .bottom {padding-top: 20px; height: 40px}
+
+	#sub-container {width: 90vw}
+	#content-container {width: 70vw; padding: 10vw}
+
+	.progress-bar {width: 75vw; padding: 4px; margin: 3vh auto}
+
+	.side-bg-pic {display: none}
+
+}
